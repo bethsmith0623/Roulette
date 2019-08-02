@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  height: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.table {
+  display: grid;
+  grid-template-columns: repeat(3, 20vmin);
+  grid-template-rows: repeat(13, 5vmin);
+  grid-gap: 1vmin;
+}
+
+.grn, .blk, .red {
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.grn {
+background-color: #55BF9B;
+}
+
+.blk {
+background-color: black;
+}
+
+.red {
+background-color: red;
+}
