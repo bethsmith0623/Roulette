@@ -14,18 +14,19 @@ body.grid-container {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
   grid-gap: 2px;
-  width; 360px;
+  width: 85%;
   grid-template-areas: 
   'top right-top'
   'left right-bottom';
 }
+
 section.table {
   grid-area: left;
   display: grid;
   grid-template-columns: repeat(3, 20vmin);
   grid-template-rows: repeat(13, 5vmin);
   grid-gap: 1vmin;
-  margin: 0 0 0 150px;
+  margin: 0 0 0 100px;
 }
 
 .name {
