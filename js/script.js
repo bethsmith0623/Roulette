@@ -1,5 +1,5 @@
 /*---- constants ---*/
-const newBal = document.getElementById('bal');
+const newBal = document.getElementById('bal').innerHTML;
 
 /*---- app's state (variables) ----*/
 let wager, balance, selection;
@@ -15,7 +15,7 @@ document.getElementById("spin").addEventListener('click', spinWhl);
 /*---- functions ----*/
 // init();
 
-function initialize(){
+function init(){
   wager = '';
   document.getElementById("bal").innerHTML = '100';
   render();
@@ -25,7 +25,7 @@ function makeBet() {
   // let betBtn = wager;
   const betBtn = document.getElementById("bet").value;
   // console.log("clicked button") 
-  console.log(`The player's bet is ${betBtn}`)
+  document.getElementById("message").innerHTML = `The player's bet is ${betBtn}`;
 };
 
 function selectNum(evt) {
@@ -35,7 +35,7 @@ function selectNum(evt) {
 
 function spinWhl() {
     let spinVal = (Math.floor(Math.random() * (36-0) + 0));
-   document.getElementById("whlNum").innerHTML = spinVal
+    document.getElementById("whlNum").innerHTML = spinVal
     // last user action
     // evaluate the values of bet vs. spin
     matchSpin(selection, spinVal)
@@ -45,24 +45,26 @@ function matchSpin(guess, actual) {
   return guess === actual ? 
     document.getElementById("message").innerHTML = "You WIN!"
     :
-    document.getElementById("message").innerHTML = "You lose";
-};
+    document.getElementById("message").innerHTML = "You lose"
 
-function updateBal(betBtn) {
+    getBalance(balance, betBtn);
+  };
+
+function getBalance(newBal, betBtn) {
   if (winner === true) {
-    console.log(newBal + betBtn);
+    document.getElementById("bal").innerHTML = (newBal + betBtn);
   } else {
-    console.log (newBal - betBtn);
+    document.getElementById("bal").innerHTML = (newBal - betBtn);
   }
 };
 
 function render() {
 //render balance
-  document.getElementById("bal").innerHTML = newBal;
   makeBet();
   selectNum();
   spinWhl();
   matchSpin();
+  getBalance();
 
 };
 
