@@ -18,8 +18,8 @@
 
 
 NEXT STEPS
-Generate a wheel that spins.
-Add option for betting on colors only (any red or black number)
-Add option for betting on ODD or EVEN numbers
-Add option for betting on 1st dozen, 2nd dozen, or 3rd dozen.
-Add option for betting on numbers 1 to 18 or numbers 19 to 36.
+1. Generate a wheel that spins.
+2. Add option for betting on colors only (any red or black number)
+3. Add option for betting on ODD or EVEN numbers
+4. Add option for betting on 1st dozen, 2nd dozen, or 3rd dozen.
+5. Add option for betting on numbers 1 to 18 or numbers 19 to 36.
