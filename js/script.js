@@ -17,8 +17,9 @@ document.getElementById("spin").addEventListener('click', spinWhl);
 initialize();
 
 function initialize(){
-  bet = null;
-  document.getElementById("bal").value = 100;
+  bal;
+  bet = 100;
+  document.getElementById("bal").textContent = bet;
 };
 
 function makeBet() {
@@ -46,15 +47,16 @@ function matchSpin(guess, actual) {
   } else {
     document.getElementById("message").innerHTML = "You lose"
   }
-  getBalance(newBal, betBtn);
+  getBalance(bal, betBtn);
 };
 
 function getBalance(guess, actual) {
   let newBal = document.getElementById("bal").value;
+  console.log(`The player bet ${betBtn}`)
+  console.log(`the players new total is ${newBal}`)
   if (guess !== actual) {
     return (newBal - betBtn);
   } else {
     return (newBal + betBtn);
-  
   }
 };
