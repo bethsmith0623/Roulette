@@ -6,16 +6,22 @@ body {
   font-family: Montserrat;
   height: 100%;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 3, 33vmin;
+  grid-template-rows: 4, 40vmin;
+  grid-template-areas: 
+    "name"
+    "table"
+    "space"
+    "wheel"
 }
 section.table {
+  grid-area: table;
   display: grid;
   grid-template-columns: repeat(3, 20vmin);
   grid-template-rows: repeat(13, 5vmin);
   grid-gap: 1vmin;
+  
 }
 
 .grn, .blk, .red {
@@ -35,4 +41,12 @@ background-color: black;
 
 .red {
 background-color: red;
+}
+
+.wheel {
+  display: grid;
+  border-color: blue;
+  color: black;
+  border-width: 2px;
+  box-align: right;
 }
