@@ -1,5 +1,5 @@
 /*---- constants ---*/
-const BEGBALANCE = "$100"
+const newBal = document.getElementById('bal');
 
 const CHIP = new Image ("Images/bluePokerChip.png")
 /*---- app's state (variables) ----*/
@@ -16,7 +16,7 @@ document.getElementById("placeBet").addEventListener('click', makeBet);
 
 function initialize(){
   wager = '0';
-  balance = '$100';
+  bal = '$100';
 };
 
 function makeBet() {
@@ -38,8 +38,12 @@ function matchSpin() {
 
 };
 
-function updateBal() {
-
+function updateBal(betBtn) {
+  if (winner === true) {
+    console.log(newBal + betBtn);
+  } else {
+    console.log (newBal - betBtn);
+  }
 };
 
 function render() {
