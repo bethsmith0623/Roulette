@@ -9,18 +9,21 @@ let wager, balance, selection;
 
 
 /*---- event listeners ----*/
-
+document.getElementById("placeBet").addEventListener('click', makeBet);
 
 /*---- functions ----*/
-init();
+// init();
 
 function initialize(){
-  wager = '$0';
+  wager = '0';
   balance = '$100';
 };
 
 function makeBet() {
-
+  // let betBtn = wager;
+  const betBtn = document.getElementById("bet").value;
+  // console.log("clicked button") 
+  console.log(betBtn)
 };
 
 function selectNum() {
