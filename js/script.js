@@ -25,21 +25,24 @@ function makeBet() {
   // let betBtn = wager;
   const betBtn = document.getElementById("bet").value;
   // console.log("clicked button") 
-  console.log(betBtn)
+  console.log(`The player's bet is ${betBtn}`)
 };
 
 function selectNum(evt) {
-  console.log(evt.target.innerHTML);
+  console.log(` ${evt.target.innerHTML}`);
   evt.target.style.border = '5px solid blue';
 };
 
 function spinWhl() {
-   document.getElementById("whlNum").innerHTML = 
-    (Math.floor(Math.random() * (36-0) + 0));
+    let spinVal = (Math.floor(Math.random() * (36-0) + 0));
+   document.getElementById("whlNum").innerHTML = spinVal
+    // last user action
+    // evaluate the values of bet vs. spin
+    matchSpin(selection, spinVal)
 };
 
-function matchSpin() {
-  return spinWhl === selectNum ? 
+function matchSpin(guess, actual) {
+  return guess === actual ? 
     console.log('You Win!')
     :
     console.log("You lose");
