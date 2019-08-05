@@ -1,10 +1,11 @@
 /*---- constants ---*/
-const newBal = document.getElementById('bal').innerHTML;
 
 /*---- app's state (variables) ----*/
-let wager, balance, selection;
+let bet, bal, selection;
 
 /*---- cached element references ----*/
+let newBal = document.getElementById("bal").value;
+let betBtn = document.getElementById("bet").value;
 
 
 /*---- event listeners ----*/
@@ -13,19 +14,17 @@ document.querySelector(".table").addEventListener('click', selectNum);
 document.getElementById("spin").addEventListener('click', spinWhl);
 
 /*---- functions ----*/
-// init();
+initialize();
 
-function init(){
-  wager = '';
-  document.getElementById("bal").innerHTML = '100';
-  render();
+function initialize(){
+  bet = null;
+  document.getElementById("bal").value = 100;
 };
 
 function makeBet() {
-  // let betBtn = wager;
-  const betBtn = document.getElementById("bet").value;
-  // console.log("clicked button") 
-  document.getElementById("message").innerHTML = `The player's bet is ${betBtn}`;
+  let betBtn = document.getElementById("bet").value;
+  document.getElementById("message").innerHTML = 
+  `The player's bet is $ ${betBtn}. Make your table selection.`;
 };
 
 function selectNum(evt) {
@@ -34,37 +33,28 @@ function selectNum(evt) {
 };
 
 function spinWhl() {
-    let spinVal = (Math.floor(Math.random() * (36-0) + 0));
-    document.getElementById("whlNum").innerHTML = spinVal
-    // last user action
-    // evaluate the values of bet vs. spin
-    matchSpin(selection, spinVal)
+  let spinVal = (Math.floor(Math.random() * (36-0) + 0));
+  document.getElementById("whlNum").innerHTML = spinVal
+  // last user action
+  // evaluate the values of bet vs. spin
+  matchSpin(selection, spinVal)
 };
 
 function matchSpin(guess, actual) {
-  return guess === actual ? 
+  if (guess === actual) {
     document.getElementById("message").innerHTML = "You WIN!"
-    :
-    document.getElementById("message").innerHTML = "You lose"
-
-    getBalance(balance, betBtn);
-  };
-
-function getBalance(newBal, betBtn) {
-  if (winner === true) {
-    document.getElementById("bal").innerHTML = (newBal + betBtn);
   } else {
-    document.getElementById("bal").innerHTML = (newBal - betBtn);
+    document.getElementById("message").innerHTML = "You lose"
+  }
+  getBalance(newBal, betBtn);
+};
+
+function getBalance(guess, actual) {
+  let newBal = document.getElementById("bal").value;
+  if (guess !== actual) {
+    return (newBal - betBtn);
+  } else {
+    return (newBal + betBtn);
+  
   }
 };
-
-function render() {
-//render balance
-  makeBet();
-  selectNum();
-  spinWhl();
-  matchSpin();
-  getBalance();
-
-};
-

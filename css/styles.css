@@ -69,6 +69,7 @@ background-color: red;
 
 .bank {
   grid-area: right-top;
+  display: grid;
   border: 2px solid blue;
   color: black;
 }
