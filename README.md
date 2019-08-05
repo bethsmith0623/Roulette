@@ -8,13 +8,13 @@
 **How to Play:**
 
 1. Type in the amount you would like to wager in the bet box.
-![enter bet]([Imgur](https://i.imgur.com/wl80QnK.png))
+![Imgur](https://i.imgur.com/wl80QnK.png)
 
 2. Click on the number you would like to place your bet on.
-![select your number]([Imgur](https://i.imgur.com/L0KsSqL.png))
+![Imgur](https://i.imgur.com/L0KsSqL.png)
 
 3. Click the SPIN button.
-![spin the wheel]([Imgur](https://i.imgur.com/6suPVNx.png))
+![Imgur](https://i.imgur.com/6suPVNx.png)
 
 
 NEXT STEPS
