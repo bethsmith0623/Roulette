@@ -25,8 +25,17 @@ section.table {
   grid-template-columns: repeat(3, 20vmin);
   grid-template-rows: repeat(13, 5vmin);
   grid-gap: 1vmin;
+  margin: 0 0 0 150px;
 }
 
+.name {
+  grid-area: top;
+  display: flex;
+  justify-content: center;
+  color: purple;
+  font-style: italic;
+  font-size: 28px;
+}
 
 .grn, .blk, .red {
   color:white;
