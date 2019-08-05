@@ -1,7 +1,6 @@
 /*---- constants ---*/
 const newBal = document.getElementById('bal');
 
-const CHIP = new Image ("Images/bluePokerChip.png")
 /*---- app's state (variables) ----*/
 let wager, balance, selection;
 
@@ -10,6 +9,7 @@ let wager, balance, selection;
 
 /*---- event listeners ----*/
 document.getElementById("placeBet").addEventListener('click', makeBet);
+document.querySelector(".table").addEventListener('click', selectNum);
 
 /*---- functions ----*/
 // init();
@@ -26,8 +26,9 @@ function makeBet() {
   console.log(betBtn)
 };
 
-function selectNum() {
-
+function selectNum(evt) {
+  console.log(evt.target.innerHTML);
+  evt.target.style.border = '5px solid blue';
 };
 
 function spinWhl() {
