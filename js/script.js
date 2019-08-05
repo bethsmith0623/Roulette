@@ -18,3 +18,28 @@ function initialize(){
   wager = '$0';
   balance = '$100';
 };
+
+function makeBet() {
+
+};
+
+function selectNum() {
+
+};
+
+function spinWhl() {
+
+};
+
+function matchSpin() {
+
+};
+
+function updateBal() {
+
+};
+
+function render() {
+
+};
+
