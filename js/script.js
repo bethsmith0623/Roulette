@@ -11,12 +11,14 @@ let wager, balance, selection;
 document.getElementById("placeBet").addEventListener('click', makeBet);
 document.querySelector(".table").addEventListener('click', selectNum);
 document.getElementById("spin").addEventListener('click', spinWhl);
+
 /*---- functions ----*/
 // init();
 
 function initialize(){
-  wager = '0';
-  bal = '$100';
+  wager = '';
+  document.getElementById("bal").innerHTML = '100';
+  render();
 };
 
 function makeBet() {
@@ -37,7 +39,10 @@ function spinWhl() {
 };
 
 function matchSpin() {
-
+  return spinWhl === selectNum ? 
+    console.log('You Win!')
+    :
+    console.log("You lose");
 };
 
 function updateBal(betBtn) {
@@ -49,6 +54,12 @@ function updateBal(betBtn) {
 };
 
 function render() {
+//render balance
+  document.getElementById("bal").innerHTML = newBal;
+  makeBet();
+  selectNum();
+  spinWhl();
+  matchSpin();
 
 };
 
