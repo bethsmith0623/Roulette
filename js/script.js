@@ -43,9 +43,9 @@ function spinWhl() {
 
 function matchSpin(guess, actual) {
   return guess === actual ? 
-    console.log('You Win!')
+    document.getElementById("message").innerHTML = "You WIN!"
     :
-    console.log("You lose");
+    document.getElementById("message").innerHTML = "You lose";
 };
 
 function updateBal(betBtn) {
