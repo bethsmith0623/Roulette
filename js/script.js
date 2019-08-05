@@ -10,7 +10,7 @@ let wager, balance, selection;
 /*---- event listeners ----*/
 document.getElementById("placeBet").addEventListener('click', makeBet);
 document.querySelector(".table").addEventListener('click', selectNum);
-
+document.getElementById("spin").addEventListener('click', spinWhl);
 /*---- functions ----*/
 // init();
 
@@ -32,7 +32,7 @@ function selectNum(evt) {
 };
 
 function spinWhl() {
-
+  console.log(Math.floor(Math.random() * (36-0) + 0));
 };
 
 function matchSpin() {
