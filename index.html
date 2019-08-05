@@ -9,9 +9,9 @@
   <title>Roulette</title>
 
 </head>
-  <body>
-    <h1 class="name">Roulette</h1>
-    <section class="table">
+  <body class="grid-container">
+    <h1 class="name grid-top">Roulette</h1>
+    <section class="table grid-left">
       <div id="c0r12" class="red"></div>
       <div id="c1r12" class="grn">0</div>
       <div id="c2r12" class="blk"></div>
@@ -64,8 +64,12 @@
       <div id="c1r0" class="blk">35</div>
       <div id="c2r0" class="red">36</div>
     </section>
-    <section class = "wheel">
+    <section class = "wheel grid-right-bottom">
       <div>Number</div>
+    </section>
+    <section class="bank grid-right-top">
+      <div class="balance">Current Balance: $0</div>
+      <div class="wager">Current Wager: $0</div>
     </section>
   </body>
 </html>

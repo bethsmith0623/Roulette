@@ -7,22 +7,26 @@ body {
   height: 100%;
   margin: 10px;
   display: grid;
-  grid-template-columns: 3, 33vmin;
-  grid-template-rows: 4, 40vmin;
+}
+
+body.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-gap: 2px;
+  width; 360px;
   grid-template-areas: 
-    "name"
-    "table"
-    "space"
-    "wheel"
+  'top right-top'
+  'left right-bottom';
 }
 section.table {
-  grid-area: table;
+  grid-area: left;
   display: grid;
   grid-template-columns: repeat(3, 20vmin);
   grid-template-rows: repeat(13, 5vmin);
   grid-gap: 1vmin;
-  
 }
+
 
 .grn, .blk, .red {
   color:white;
@@ -44,9 +48,16 @@ background-color: red;
 }
 
 .wheel {
-  display: grid;
-  border-color: blue;
+  grid-area: right-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
   color: black;
-  border-width: 2px;
-  box-align: right;
+}
+
+.bank {
+  grid-area: right-top;
+  border: 2px solid blue;
+  color: black;
 }
