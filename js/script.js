@@ -32,7 +32,8 @@ function selectNum(evt) {
 };
 
 function spinWhl() {
-  console.log(Math.floor(Math.random() * (36-0) + 0));
+   document.getElementById("whlNum").innerHTML = 
+    (Math.floor(Math.random() * (36-0) + 0));
 };
 
 function matchSpin() {
