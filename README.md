@@ -8,25 +8,24 @@
 
 ## **How to Play:**
 
-Main game page
 
-[Imgur](https://i.imgur.com/Ip8WHov.png)
+[Main page](https://i.imgur.com/Ip8WHov.png)
 
 
 1. Type in the amount you would like to wager in the bet box.
-[Imgur](https://i.imgur.com/OSWulYJ.png)
+[Type in your wager](https://i.imgur.com/OSWulYJ.png)
 
 When you click the Place Bet button a message appears telling you to make your table selection.
-[Imgur](https://i.imgur.com/wKLwk7B.png)
+[Click Place Bet](https://i.imgur.com/wKLwk7B.png)
 
 2. Click on the number you would like to place your bet on. This game is currently accepting single number bets only and the number you select appears with a blue border.
-[Imgur](https://i.imgur.com/iZBbevW.png)
+[Make selection](https://i.imgur.com/iZBbevW.png)
 
 3. Click the SPIN button. A number is generated to simulate a wheel spin and that number is displayed. In the bank area your win/lose message appears and the balance is updated. 
-[Imgur](https://i.imgur.com/JuAO8fF.png)
+[Spin the 'wheel'](https://i.imgur.com/JuAO8fF.png)
 
 4. To continue play, click the Next Spin button and the wheel and table are cleared for another round.
-[Imgur](https://i.imgur.com/WQ1W5ke.png)
+[Play again](https://i.imgur.com/WQ1W5ke.png)
 
 
 **Technology Used**
