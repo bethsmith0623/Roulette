@@ -46,7 +46,7 @@ As a child, my Aunt Helen had a miniature roulette wheel that I loved to play wi
 
 **_NEXT STEPS_**
 
-1. Add HTML, CSS, and JS to generate a wheel that spins with a pointer.
+1. Add HTML, CSS, and JS to generate a pointer with a wheel that spins.
 2. Add logic for betting on RED or BLACK.
 3. Add logic for betting on ODD or EVEN numbers.
 4. Add logic for betting on 1st dozen, 2nd dozen, or 3rd dozen.
