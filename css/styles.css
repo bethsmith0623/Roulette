@@ -45,6 +45,7 @@ section.table {
   align-items: center;
   font-size: 28px;
 }
+
 .grn {
 background-color: #55BF9B;
 }
@@ -77,4 +78,8 @@ background-color: red;
 #nextSpin {
   display: flex;
   background-color: white;
+}
+
+#bal {
+  color: black;
 }

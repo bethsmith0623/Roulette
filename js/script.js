@@ -6,6 +6,11 @@ let bet, bal, selection;
 /*---- cached element references ----*/
 let bal2 = document.getElementById("bal");
 let bet2 = document.getElementById("bet");
+let message = document.getElementById("message");
+let placeBet = document.getElementById("placeBet");
+let spin = document.getElementById("spin");
+let wheelNum = document.getElementById("whlNum");
+let nextSpin = document.getElementById("nextSpin");
 
 /*---- event listeners ----*/
 document.getElementById("placeBet").addEventListener('click', makeBet);
@@ -17,57 +22,67 @@ document.getElementById("nextSpin").addEventListener('click', reset);
 initialize();
 
 function initialize(){
-  // bal = 100;
-  bet = 100;
-  document.getElementById("bal").value = bet;
+  bal = 100;
+  placeBet.style.backgroundColor = "green";
+  render();
+};
+
+function render() {
+  document.getElementById("bal").value = bal;
 };
 
 function makeBet() {
-  let bet3 = document.getElementById("bet").value;
-  document.getElementById("message").innerHTML = 
-  `The player's bet is $ ${bet3}. Make your table selection.`;
+  let bet2 = document.getElementById("bet").value;
+  message.style.color = "black"; 
+  message.innerHTML = 
+  `The player's bet is $ ${bet2}. Make your table selection.`;
+  placeBet.style.backgroundColor = "white";
+  // onclick="document.getElementById('bet').value = ''";
 };
 
 function selectNum(evt) {
-  console.log(`${evt.target.innerHTML}`);
+  selection = evt.target
   evt.target.style.border = '5px solid blue';
-  document.getElementById("spin").style.backgroundColor = "green";
+  spin.style.backgroundColor = "green";
 };
 
 function spinWhl() {
   let spinVal = (Math.floor(Math.random() * (36-0) + 0));
-  document.getElementById("whlNum").innerHTML = spinVal
-  document.getElementById("spin").style.backgroundColor = "white";
-  // last user action
-  // evaluate the values of bet vs. spin
+  wheelNum.innerHTML = spinVal
+  spin.style.backgroundColor = "white";
   matchSpin(selection, spinVal)
 };
 
 function matchSpin(guess, actual) {
   if (guess === actual) {
-    document.getElementById("message").style.color = "green"
-    document.getElementById("message").innerHTML = "You WIN!"
+    message.style.color = "green"
+    message.innerHTML = "You WIN!"
   } else {
-    document.getElementById("message").style.color = "red"
-    document.getElementById("message").innerHTML = "You lose"
+    message.style.color = "red"
+    message.innerHTML = "You lose"
   }
-  document.getElementById("nextSpin").style.backgroundColor = "green"
   getBalance(bal2, bet2);
+  nextSpin.style.backgroundColor = "green"
 };
 
 function getBalance(guess, actual) {
-  // let newBal = document.getElementById("bal").value;
-  // console.log(`The player bet ${bet2.value}`)
-  // console.log(`the players new total is ${bal2}`)
   if (guess !== actual) {
-    console.log(bal2.value - bet2.value);
+      bal -= parseInt(bet2.value)
+      render()
   } else {
-    console.log(bal2.value + bet2.value);
+      bal += parseInt(bet2.value)
+      render()
   }
 };
 
+
 function reset() {
-  document.getElementById("nextSpin").style.backgroundColor = "white"
-  bet = '';
-  
+  if(selection) {
+    selection.style.border = 'none';
+    selection = undefined
+    message.innerHTML = ""
+    wheelNum.innerHTML = ""
+  }
+nextSpin.style.backgroundColor = "white";
+placeBet.style.backgroundColor = "green";
 }
