@@ -47,6 +47,7 @@ I used HTML, CSS, and JavaScript to create this game.
 6. Add the mathematical formulas for proportional payouts.
 
 **Trivia**
+
 The wheel is spun in one direction and the ball in the opposite direction.
 
 The odds of two consecutive wins on a European wheel are exactly 1368 to 1 against.
