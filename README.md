@@ -39,7 +39,9 @@ As a child, my Aunt Helen had a miniature roulette wheel that I loved to play wi
 
 **_TECHNOLOGY USED_**
 
-I used HTML, CSS, and JavaScript to create this game.
+*HTML  
+*CSS  
+*JavaScript  
 
 
 **_NEXT STEPS_**
