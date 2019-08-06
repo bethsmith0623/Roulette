@@ -4,7 +4,7 @@ Roulette comes from the French word for 'little wheel'. Legend has it that Blais
 
 In casino play, there are a variety of betting options with varying payouts based on probability. Inside bets such as the single number bet have higher payouts than outside bets such as odd/even or black/red. The game also typically imposes minimum and maximum bets. The dealer can allow bets to continue while the ball spins until he announces "no nore bets".
 
-As a child, my Aunt Helen had a miniature roulette wheel that I loved to play with. This was my inspiration for creating this game. Here I have built a single number only game that does not have minimum or maximum bets. The payout for my game is just the amount of the wager.
+As a child, my Aunt Helen had a miniature roulette wheel that I loved to play with. This was my inspiration for creating this game. Here I have built a single number game that does not have minimum or maximum bets. The payout for my game is just the amount of the wager.
 
 [Wireframe](https://wireframe.cc/pro/pp/3d912db8b264588)
 
