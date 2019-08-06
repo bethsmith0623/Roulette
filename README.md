@@ -1,5 +1,10 @@
 # Roulette
 
+Roulette comes from the French word for 'little wheel'. Legend has it that Blaise Pascal accidently invented the gaming wheel in 1655 while trying to invent a perpetual motion machine. A hydrid game using the gaming wheel and a betting table was invented in 1720 in France and has been played in its present form since 1796. The zero was added to the gaming wheel by Francois and Louis Blanc in the mid-1800's to give the house an edge. This addition birthed the famous Monte Carlo gaming culture. When the game was brought to America, the double zero was added to give the house an even greater edge. Currently there are 2 kinds of gaming wheels, the European wheel with 37 numbers and the American wheel with 38 numbers.
+
+In casino play, there are a variety of betting options with varying payouts based on probability. Inside bets such as the single number bet have higher payouts than outside bets such as odd/even or black/red. The game also typically imposes minimum and maximum bets. The dealer can allow bets to continue while the ball spins until he announces "no nore bets".
+
+Here I have created a single number only game that does not have minimum or maximum bets. The payout for my game is just the amount of the wager.
 
 [Wireframe](https://wireframe.cc/pro/pp/3d912db8b264588)
 
@@ -39,3 +44,17 @@ I used HTML, CSS, and JavaScript to create this game.
 3. Add option for betting on ODD or EVEN numbers
 4. Add option for betting on 1st dozen, 2nd dozen, or 3rd dozen.
 5. Add option for betting on numbers 1 to 18 or numbers 19 to 36.
+6. Add the mathematical formulas for proportional payouts.
+
+**Trivia**
+The wheel is spun in one direction and the ball in the opposite direction.
+
+The odds of two consecutive wins on a European wheel are exactly 1368 to 1 against.
+
+The sum of all the numbers on the wheel is 666.
+
+Wheel sequencing is specific: 
+    0 and 00 are always green
+    1-10 and 19-28 have odd numbers in red and evens in black
+    11-18 and 29-36 have odd numbers in black and evens in red
+    The color pattern on the wheel alternates red and black.
