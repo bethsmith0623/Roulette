@@ -73,3 +73,8 @@ background-color: red;
   border: 2px solid blue;
   color: black;
 }
+
+#nextSpin {
+  display: flex;
+  background-color: white;
+}
