@@ -40,11 +40,11 @@ I used HTML, CSS, and JavaScript to create this game.
 
 **NEXT STEPS**
 
-1. Generate a wheel that spins.
-2. Add option for betting on RED or BLACK.
-3. Add option for betting on ODD or EVEN numbers.
-4. Add option for betting on 1st dozen, 2nd dozen, or 3rd dozen.
-5. Add option for betting HIGH (numbers 1 to 18) or LOW (numbers 19 to 36).
+1. Add HTML, CSS, and JS to generate a wheel that spins.
+2. Add logic for betting on RED or BLACK.
+3. Add logic for betting on ODD or EVEN numbers.
+4. Add logic for betting on 1st dozen, 2nd dozen, or 3rd dozen.
+5. Add logic for betting HIGH (numbers 1 to 18) or LOW (numbers 19 to 36).
 6. Add the mathematical formulas for proportional payouts.
 
 
