@@ -41,6 +41,7 @@ function makeBet() {
 };
 
 function selectNum(evt) {
+  if (selection) return;
   selection = evt.target
   evt.target.style.border = '5px solid blue';
   spin.style.backgroundColor = "green";
