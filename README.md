@@ -39,9 +39,9 @@ As a child, my Aunt Helen had a miniature roulette wheel that I loved to play wi
 
 **_TECHNOLOGY USED_**
 
-*HTML  
-*CSS  
-*JavaScript  
+* HTML  
+* CSS  
+* JavaScript  
 
 
 **_NEXT STEPS_**
