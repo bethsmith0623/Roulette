@@ -52,7 +52,7 @@ I used HTML, CSS, and JavaScript to create this game.
 6. Add the mathematical formulas for proportional payouts.
 
 
-**_ ROULETTE TRIVIA_**
+**_ROULETTE TRIVIA_**
 
 The wheel is spun in one direction and the ball in the opposite direction.
 
