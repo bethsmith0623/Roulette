@@ -34,10 +34,8 @@ function render() {
 function makeBet() {
   let bet2 = document.getElementById("bet").value;
   message.style.color = "black"; 
-  message.innerHTML = 
-  `The player's bet is $ ${bet2}. Make your table selection.`;
+  message.innerHTML = `The player's bet is $ ${bet2}. Make your table selection.`;
   placeBet.style.backgroundColor = "white";
-  // onclick="document.getElementById('bet').value = ''";
 };
 
 function selectNum(evt) {
@@ -51,7 +49,7 @@ function spinWhl() {
   let spinVal = (Math.floor(Math.random() * (36-0) + 0));
   wheelNum.innerHTML = spinVal
   spin.style.backgroundColor = "white";
-  matchSpin(selection, spinVal)
+  matchSpin(selection, spinVal);
 };
 
 function matchSpin(guess, actual) {
@@ -76,7 +74,6 @@ function getBalance(guess, actual) {
   }
 };
 
-
 function reset() {
   if(selection) {
     selection.style.border = 'none';
@@ -84,6 +81,6 @@ function reset() {
     message.innerHTML = ""
     wheelNum.innerHTML = ""
   }
-nextSpin.style.backgroundColor = "white";
-placeBet.style.backgroundColor = "green";
+  nextSpin.style.backgroundColor = "white";
+  placeBet.style.backgroundColor = "green";
 }
