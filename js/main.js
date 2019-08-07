@@ -11,12 +11,14 @@ let placeBet = document.getElementById("placeBet");
 let spin = document.getElementById("spin");
 let wheelNum = document.getElementById("whlNum");
 let nextSpin = document.getElementById("nextSpin");
+let resetGame = document.getElementById("reset");
 
 /*---- event listeners ----*/
-document.getElementById("placeBet").addEventListener('click', makeBet);
+placeBet.addEventListener('click', makeBet);
 document.querySelector(".table").addEventListener('click', selectNum);
-document.getElementById("spin").addEventListener('click', spinWhl);
-document.getElementById("nextSpin").addEventListener('click', reset);
+spin.addEventListener('click', spinWhl);
+nextSpin.addEventListener('click', nextTurn);
+resetGame.addEventListener('click', reset);
 
 /*---- functions ----*/
 initialize();
@@ -24,6 +26,7 @@ initialize();
 function initialize(){
   bal = 100;
   placeBet.style.backgroundColor = "green";
+  message.innerHTML = "";
   render();
 };
 
@@ -36,6 +39,7 @@ function makeBet() {
   if (parseInt(bal2.value) === 0) {
     message.style.color = "red";
     message.innerHTML = `Your balance is $0. Thank you for playing.`;
+    resetGame.style.backgroundColor = "green";
   } else if (parseInt(bet2.value) > parseInt(bal2.value)) {
     message.style.color = "red";
     message.innerHTML = `You do not have enough to make that wager.`;
@@ -84,7 +88,7 @@ function getBalance(guess, actual) {
   }
 };
 
-function reset() {
+function nextTurn() {
   if(selection) {
     selection.style.border = 'none';
     selection = undefined
@@ -93,4 +97,8 @@ function reset() {
   }
   nextSpin.style.backgroundColor = "white";
   placeBet.style.backgroundColor = "green";
+}
+
+function reset() {
+    initialize();
 }

@@ -83,3 +83,9 @@ background-color: red;
 #bal {
   color: black;
 }
+
+#reset {
+  display: flex;
+  background-color: white;
+
+}
