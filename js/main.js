@@ -33,17 +33,16 @@ function render() {
 
 function makeBet() {
   let bet2 = document.getElementById("bet").value;
-  if (parseInt(bal2) >= bet2) {
-  message.style.color = "black"; 
-  message.innerHTML = `The player's bet is $ ${bet2}. Make your table selection.`;
-  placeBet.style.backgroundColor = "white";
-  } else if (parseInt(bal) === 0){
-  message.style.color = "red";
-  message.innerHTML = `Your balance is $0. Thank you for playing.`
-  
+  if (bal2.value === 0) {
+    message.style.color = "red";
+    message.innerHTML = `Your balance is $0. Thank you for playing.`;
+  } else if (bet2.value > bal2.value) {
+    message.style.color = "red";
+    message.innerHTML = `You do not have enough to make that wager.`;
   } else {
-  message.style.color = "red";
-  message.innerHTML = `You do not have enough to make that wager.`
+    message.style.color = "black"; 
+    message.innerHTML = `The player's bet is $ ${bet2}. Make your table selection.`;
+    placeBet.style.backgroundColor = "white";
   }
 };
 
