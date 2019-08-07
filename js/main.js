@@ -52,6 +52,7 @@ function makeBet() {
 
 function selectNum(evt) {
   if (parseInt(bal2.value) === 0) return;
+  if (parseInt(bet2.value) > parseInt(bal2.value)) return;
   if (selection) return; 
   selection = evt.target
   evt.target.style.border = '5px solid blue';
@@ -60,6 +61,7 @@ function selectNum(evt) {
 
 function spinWhl() {
   if (parseInt(bal2.value) === 0) return;
+  if (parseInt(bet2.value) > parseInt(bal2.value)) return;
   let spinVal = (Math.floor(Math.random() * (36-0) + 0));
   wheelNum.innerHTML = spinVal
   spin.style.backgroundColor = "white";
@@ -80,11 +82,11 @@ function matchSpin(guess, actual) {
 
 function getBalance(guess, actual) {
   if (guess !== actual) {
-      bal -= parseInt(bet2.value)
-      render()
+    bal -= parseInt(bet2.value)
+    render()
   } else {
-      bal += parseInt(bet2.value)
-      render()
+    bal += parseInt(bet2.value)
+    render()
   }
 };
 
@@ -100,5 +102,6 @@ function nextTurn() {
 }
 
 function reset() {
-    initialize();
+  resetGame.style.backgroundColor = "white";
+  initialize();
 }
