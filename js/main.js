@@ -35,7 +35,6 @@ function render() {
 };
 
 function makeBet() {
-  // let bet2 = document.getElementById("bet").value;
   if (parseInt(bal2.value) === 0) {
     message.style.color = "red";
     message.innerHTML = `Your balance is $0. Thank you for playing.`;
@@ -102,6 +101,7 @@ function nextTurn() {
 }
 
 function reset() {
-  resetGame.style.backgroundColor = "white";
+  nextTurn();
   initialize();
+  resetGame.style.backgroundColor = "white";
 }
