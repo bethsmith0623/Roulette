@@ -38,12 +38,12 @@ function makeBet() {
   if (parseInt(bal2.value) === 0) {
     message.style.color = "red";
     message.innerHTML = `Your balance is $0. Thank you for playing.`;
-    resetGame.style.backgroundColor = "green";
+    resetGame.style.backgroundColor = "yellow";
   } else if (parseInt(bet2.value) > parseInt(bal2.value)) {
     message.style.color = "red";
     message.innerHTML = `You do not have enough to make that wager.`;
   } else {
-    message.style.color = "black"; 
+    message.style.color = "blue"; 
     message.innerHTML = `The player's bet is $ ${bet2.value}. Make your table selection.`;
     placeBet.style.backgroundColor = "white";
   }
@@ -103,5 +103,5 @@ function nextTurn() {
 function reset() {
   nextTurn();
   initialize();
-  resetGame.style.backgroundColor = "white";
+  resetGame.style.backgroundColor = "lightyellow";
 }
