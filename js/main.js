@@ -47,13 +47,15 @@ function makeBet() {
 };
 
 function selectNum(evt) {
-  if (selection) return;
+  if (parseInt(bal2.value) === 0) return;
+  if (selection) return; 
   selection = evt.target
   evt.target.style.border = '5px solid blue';
   spin.style.backgroundColor = "green";
 };
 
 function spinWhl() {
+  if (parseInt(bal2.value) === 0) return;
   let spinVal = (Math.floor(Math.random() * (36-0) + 0));
   wheelNum.innerHTML = spinVal
   spin.style.backgroundColor = "white";
