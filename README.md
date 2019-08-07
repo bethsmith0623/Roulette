@@ -17,7 +17,7 @@ As a child, my Aunt Helen had a miniature roulette wheel that I loved to play wi
 
 ## **_HOW TO PLAY:_**
 
-![Roulette game](https://bethsmith0623.github.io/Roulette/)
+[Roulette game](https://bethsmith0623.github.io/Roulette/)
 
 
 ![Game page](https://i.imgur.com/Ip8WHov.png)
