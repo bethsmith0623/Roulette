@@ -87,5 +87,10 @@ background-color: red;
 #reset {
   display: flex;
   background-color: lightyellow;
+}
 
+#message {
+  border: 2px dashed purple;
+  margin: 3px;
+  height: 24px;
 }
