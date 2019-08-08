@@ -7,13 +7,16 @@ body {
   height: 100%;
   margin: 10px;
   display: grid;
+  background-image: url("https://i.imgur.com/WdI3dHT.jpg");
 }
 
 body.grid-container {
   display: grid;
+  justify-content: center;
+  align-items: top;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
-  grid-gap: 2px;
+  grid-gap: 3px;
   width: 85%;
   grid-template-areas: 
   'top right-top'
@@ -23,19 +26,22 @@ body.grid-container {
 section.table {
   grid-area: left;
   display: grid;
+  background-color: white;
+  border: 3px solid white;
   grid-template-columns: repeat(3, 20vmin);
   grid-template-rows: repeat(13, 5vmin);
   grid-gap: 1vmin;
-  margin: 0 0 0 100px;
+  margin: 0 0 70px 170px;
 }
 
 .name {
   grid-area: top;
   display: flex;
-  justify-content: center;
-  color: purple;
+  justify-content: center; 
+  align-items: center;
+  color: lavenderblush;
   font-style: italic;
-  font-size: 28px;
+  font-size: auto;
 }
 
 .grn, .blk, .red {
@@ -64,6 +70,7 @@ background-color: red;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
   border: 2px solid blue;
   color: black;
   height: 475px;
@@ -72,6 +79,7 @@ background-color: red;
 .bank {
   grid-area: right-top;
   display: grid;
+  background-color: white;
   border: 2px solid blue;
   color: black;
 }
