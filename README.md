@@ -33,7 +33,7 @@ The game page features a minimalistic design with a message bar that walks the u
 ![Make selection](https://i.imgur.com/WpqIqeA.png)
 
 4. Click the SPIN button. A number is generated to simulate a wheel spin and that number is displayed above the button. In the bank area your win/lose message appears and the balance is updated. To continue play, click the NEXT SPIN button. The wheel and table are cleared for another round.
-![Spin the 'wheel'](https://i.imgur.com/WpqIqeA.png)
+![Spin the 'wheel'](https://i.imgur.com/cRab9CW.png)
 ![Next Spin](https://i.imgur.com/h2H0J51.png)
 
 5. If you try to place a bet while your bank is at $0, you will be prompted to reset the game. The reset feature is also available at any time during the game but the button only changes color when your game is over.
