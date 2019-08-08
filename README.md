@@ -8,35 +8,35 @@ In casino play, there are a variety of betting options with varying payouts base
 
 **_MOTIVATION AND DESIGN_**
 
-As a child, my Aunt Helen had a miniature roulette wheel that I loved to play with. This was my inspiration for creating this game. Here I have built a single number game that does not have minimum or maximum bets. The payout for my game is just the amount of the wager.
+As a child, my Aunt Helen had a miniature roulette wheel that I loved to play with. This was my inspiration for creating this game. Currently the game I have built here accepts single number table selections only and does not have minimum or maximum bets. The payout for my game is just the amount of the wager. Future versions will include a functioning wheel to spin as well as additional betting options and proportional payouts (see Next Steps below).
 
-[Wireframe](https://wireframe.cc/pro/pp/3d912db8b264588)
+[Original wireframe](https://wireframe.cc/pro/pp/3d912db8b264588)
 
-[Pseudocode](https://docs.google.com/document/d/1SJwBhMl_dXjQCciWCenDWi_vRhLC5N65a3xe0IveJaM/edit?usp=sharing)
+[Original pseudocode](https://docs.google.com/document/d/1SJwBhMl_dXjQCciWCenDWi_vRhLC5N65a3xe0IveJaM/edit?usp=sharing)
 
 
 ## **_HOW TO PLAY:_**
 
 [Roulette game](https://bethsmith0623.github.io/Roulette/)
 
-
-![Game page](https://i.imgur.com/Ip8WHov.png)
+The game page features a minimalistic design with a message bar that walks the user through game play.
+![Game page](https://i.imgur.com/OxKwqMd.png)
 
 
 1. Type in the amount you would like to wager in the box.
-![Type in your wager](https://i.imgur.com/OSWulYJ.png)
+![Type in your wager](https://i.imgur.com/6mlSYtW.png)
 
 2. When you click the PLACE BET button a message appears prompting you to make your table selection.
-![Click Place Bet](https://i.imgur.com/wKLwk7B.png)
+![Click Place Bet](https://i.imgur.com/rxBzT47.png)
 
 3. Click on the number you would like to place your wager on. This game is currently accepting single number selections only and the number you choose appears with a blue border.
-![Make selection](https://i.imgur.com/iZBbevW.png)
+![Make selection](https://i.imgur.com/3vGO1ta.png)
 
-4. Click the SPIN button. A number is generated to simulate a wheel spin and that number is displayed above the button. In the bank area your win/lose message appears and the balance is updated. 
-![Spin the 'wheel'](https://i.imgur.com/JuAO8fF.png)
+4. Click the SPIN button. A number is generated to simulate a wheel spin and that number is displayed above the button. In the bank area your win/lose message appears and the balance is updated. To continue play, click the NEXT SPIN button. The wheel and table are cleared for another round.
+![Spin the 'wheel'](https://i.imgur.com/UDDhAL3.png)
 
-5. To continue play, click the NEXT SPIN button. The wheel and table are cleared for another round.
-![Play again](https://i.imgur.com/WQ1W5ke.png)
+5. It you try to place a bet while your bank is at $0, you will be prompted to reset the game. The reset feature is also available at any time during the game but the button only changes color when your game is over.
+![Play again](https://i.imgur.com/IwTbTq2.png)
 
 
 **_TECHNOLOGY USED_**
