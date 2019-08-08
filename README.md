@@ -20,23 +20,24 @@ As a child, my Aunt Helen had a miniature roulette wheel that I loved to play wi
 [Roulette game](https://bethsmith0623.github.io/Roulette/)
 
 The game page features a minimalistic design with a message bar that walks the user through game play.
-![Game page](https://i.imgur.com/OxKwqMd.png)
+![Game page](https://i.imgur.com/2r3A7wN.png)
 
 
 1. Type in the amount you would like to wager in the box.
-![Type in your wager](https://i.imgur.com/I2RufCb.png)
+![Type in your wager](https://i.imgur.com/mp6ihFo.png)
 
 2. When you click the PLACE BET button a message appears prompting you to make your table selection.
-![Click Place Bet](https://i.imgur.com/rxBzT47.png)
+![Click Place Bet](https://i.imgur.com/MZ89MN2.png)
 
 3. Click on the number you would like to place your wager on. This game is currently accepting single number selections only and the number you choose appears with a blue border.
-![Make selection](https://i.imgur.com/3vGO1ta.png)
+![Make selection](https://i.imgur.com/WpqIqeA.png)
 
 4. Click the SPIN button. A number is generated to simulate a wheel spin and that number is displayed above the button. In the bank area your win/lose message appears and the balance is updated. To continue play, click the NEXT SPIN button. The wheel and table are cleared for another round.
-![Spin the 'wheel'](https://i.imgur.com/UDDhAL3.png)
+![Spin the 'wheel'](https://i.imgur.com/WpqIqeA.png)
+![Next Spin](https://i.imgur.com/h2H0J51.png)
 
 5. If you try to place a bet while your bank is at $0, you will be prompted to reset the game. The reset feature is also available at any time during the game but the button only changes color when your game is over.
-![Play again](https://i.imgur.com/IwTbTq2.png)
+![Play again](https://i.imgur.com/IzArxvs.png)
 
 
 **_TECHNOLOGY USED_**
