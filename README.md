@@ -24,7 +24,7 @@ The game page features a minimalistic design with a message bar that walks the u
 
 
 1. Type in the amount you would like to wager in the box.
-![Type in your wager](https://i.imgur.com/6mlSYtW.png)
+![Type in your wager](https://i.imgur.com/I2RufCb.png)
 
 2. When you click the PLACE BET button a message appears prompting you to make your table selection.
 ![Click Place Bet](https://i.imgur.com/rxBzT47.png)
